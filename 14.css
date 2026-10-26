@@ -1,0 +1,321 @@
+
+
+:root{
+	--main-color:#d3ad7f;
+	--black:#13131a;
+	--bg:#010103;
+	--border:0.1rem solid rgba(255,255,255,0.3);
+	font-size:10px;
+	
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	outline:none;
+	border:none;
+	text-decoration:none;
+	text-transform:capitalize;
+	transition:0.2s linear;
+	font-family: "Orbitron", sans-serif;
+}
+
+	body{
+		background-color: var(--bg);
+}
+
+
+section{
+	padding:3rem 2rem;
+	margin:0 auto;
+	max-width:1200px;
+}
+
+	.princ{
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+		z-index:80;
+		background-color:#FF0000;
+		
+		
+  
+}
+
+.princ section{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding-top:1rem;
+	padding-bottom:0.1rem;
+	
+}
+
+
+.menu a{
+	margin:0 1rem;
+	font-size:1.8rem;
+	color:#FFFF00;
+	font-weight:100px;
+	
+	
+}
+.menu a:hover{
+	color: #fff;
+	padding-bottom:1rem;
+	font-size:2rem;
+}
+	
+  .logo img{
+	margin:1rem;
+	width:150px;
+	
+}
+	
+.boto{
+		background:#0000FF;  
+		color:#fff;	
+		padding:1rem 3rem;
+		border:2px solid #fff;
+		border-radius:8px;
+		font-size:1.7rem;
+		cursor:pointer;
+		display:inline-block;
+		
+	
+}
+.boto:hover{
+	background:#1F51FF;
+	color:#fff;
+	letter-spacing:0.2rem;
+	
+}
+	
+
+	
+.home-container {
+  background: url("EQUA.png");
+  background-position:center ;
+  background-size: cover;
+  
+  
+ 
+}
+.home-container section{
+	display:flex;
+	align-items:flex-end;
+	justify-content:flex-end;
+	
+	min-height: 99vh;
+	
+}
+
+.content{
+	max-width:60rem;
+	
+	}
+.content h3{
+	color: color: white; /* cor principal da letra */
+	font-size:10rem;
+	
+
+}
+p{
+	color:color:#fff; /* cor principal da letra */
+	font-size:2rem;
+	line-height:1.8;
+	
+}
+.title{
+	font-size:4rem;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+	
+}
+.title span{	
+	color:#FF0000;
+	text-transform:uppercase;
+}
+.about .se{
+	display:flex;
+	align-items:center;
+	background-color:var(--black);
+	gap:1.5rem;
+	
+}
+
+.about .se img{
+	width:400px;
+}
+.about .se .cont {
+	padding:2rem;
+	width:400px;
+}
+.about .se .cont h3{
+	font-size:3rem;
+	color:#fff;
+}
+	
+	
+.about .se .cont p{
+	font-size:1.6rem;
+	color:#fff;
+	padding:1rem 0;
+	line-height:1.8;
+}
+	
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.menu .box-container .box{
+	text-align:center;
+	border:var(--border);
+	padding:5rem;
+	cursor:pointer;
+	
+}
+
+	
+.menu .box-container .box img{
+	height:10rem;
+}
+.menu .box-container .box h3{
+	color:#fff;
+	font-size:2rem;
+	padding:1rem 0;
+}
+.menu .box-container .box .toque{
+	color:#fff;
+	font-size:1.5rem;
+	padding:0.5rem 0;
+	
+	
+}
+.menu .box-container .box span{
+	color:var(--black);
+	font-size:1.5rem;
+	padding:1rem 0;
+}
+.menu .box-container .box:hover{
+	background-color:#fff;
+}
+
+.menu .box-container .box:hover>*{
+	color:var(--black);
+}
+
+.pal{
+	
+	width:200px;
+	height:15px;
+	padding:5px;
+}
+
+.foo{
+ color: #FFFFFF;
+ text-align:center;
+}
+
+
+/* Responsividade geral */
+@media (max-width: 1024px) {
+  .menu a {
+    font-size: 1.5rem;
+  }
+  .content h3 {
+    font-size: 6rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  
+  .foo{
+	  color:#ffff;
+	  padding:5px;
+  }
+}
+
+@media (max-width: 768px) {
+	
+.home-container{
+  background-position:center top ;
+  background-size: 440px;
+ background-repeat:no-repeat;
+ height:300px;
+ margin:0;
+ padding:0;
+ display:block;
+  
+}
+
+.ci img{
+	display:none;
+}
+	
+	
+  .princ section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu a {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .content h3 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .about .se {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .se img,
+  .about .se .cont {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu a {
+    font-size: 1.2rem;
+  }
+
+  .boto {
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .content h3 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+  .boto:hover{	
+	color:#fff;
+	letter-spacing:0.2rem;
+	
+}
+}
